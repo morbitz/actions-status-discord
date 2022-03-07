@@ -13,7 +13,7 @@ jobs:
     env:
       DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_VERBOSE }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: run simple
         uses: ./
       - name: run full
